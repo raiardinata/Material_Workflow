@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~" title="root" description="Root">
+    <siteMapNode url="~\Pages\homePage" title="Home" description="Home" roles="RnD" />
+    <!--<siteMapNode url="" title="Master Default Data" description="Master Default Data" roles="RnD">
+      <siteMapNode url="~\Pages\defaultRMPage" title="Default RM" description="Master Default RM Data" roles="RnD" />
+      <siteMapNode url="~\Pages\defaultSFPage" title="Default SF" description="Master Default SF Data" roles="RnD" />
+      <siteMapNode url="~\Pages\defaultFGPage" title="Default FG" description="Master Default FG Data" roles="RnD" />
+    </siteMapNode>-->
+    <siteMapNode url="~\Pages\dummyRnd" title="R&amp;D" description="Research and Development Site" roles="RnD">
+      <siteMapNode url="~\Pages\rndPage" title="Create Material" description="Research and Development Site" roles="RnD" />
+      <siteMapNode url="~\Pages\extendPlantPage" title="Extend Plant" description="Research and Development Extend Plant Site" roles="RnD" />
+      <siteMapNode url="~\Pages\extendPlantPageDisplay" title="Extend Plant Display" description="Research and Development Extend Plant Display Site" roles="RnD" />
+    </siteMapNode>
+    <siteMapNode url="~\Pages\dummySample" title="Sample Material" description="Sample Material" roles="RnD" />
+    <siteMapNode url="~\Pages\dummyMaintenance" title="Maintenance" description="Maintenance Page" roles="RnD">
+      <siteMapNode url="~\Pages\cancelPage" title="Cancel Material" description="Cancel Material" roles="RnD" />
+      <siteMapNode url="~\Pages\changePassword" title="Change Password" description="Change Password" roles="RnD" />
+    </siteMapNode>
+    <siteMapNode url="~\Pages\dummyReport" title="Report" description="Report" roles="RnD">
+      <siteMapNode url="~\Pages\reportPage" title="Report Lead Time" description="Report Lead Time" roles="RnD" />
+      <siteMapNode url="~\Pages\reportCreateMaterial" title="Create Material Report" description="Report Create Material" roles="RnD" />
+      <siteMapNode url="~\Pages\reportCancelMaterial" title="Cancel Material Report" description="Report Cancel Material" roles="RnD" />
+      <siteMapNode url="~\Pages\reportSurchargeMaterial" title="Surcharge Material Report" description="Report Surcharge Material" roles="RnD" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

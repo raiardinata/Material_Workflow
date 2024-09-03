@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="root" description="Root">
+    <siteMapNode url="~\Pages\homePage" title="Home" description="Home"/>
+    <siteMapNode url="~\Pages\dummyMasterDefaultData" title="Master Default Data" description="Master Default Data" roles="RnD">
+      <siteMapNode url="~\Pages\defaultRMPage" title="Default RM" description="Master Default RM Data" roles="RnD" />
+      <siteMapNode url="~\Pages\defaultSFPage" title="Default SF" description="Master Default SF Data" roles="RnD" />
+      <siteMapNode url="~\Pages\defaultFGPage" title="Default FG" description="Master Default FG Data" roles="RnD" />
+    </siteMapNode>
+    <siteMapNode url="~\Pages\dummyDisplayCreateMaterial" title="Master Material" description="Material Master" roles="RnD">
+      <siteMapNode url="~\Pages\displayCreateMaterial" title="Create Material" description="Create Material Master Data" roles="RnD"/>
+      <siteMapNode url="~\Pages\displaySampleMaterial" title="Sample Material" description="Sample Material Master Data" roles="RnD"/>
+      <siteMapNode url="~\Pages\displayExtendMaterial" title="Extend Material" description="Extend Material Master Data" roles="RnD"/>
+      <siteMapNode url="~\Pages\displayMaterialSAP" title="SAP Material" description="SAP Material Master Data" roles="RnD"/>
+    </siteMapNode>
+    <siteMapNode url="~\Pages\dummyMaintenanceDeptConst" title="Maintenance" description="Maintenance Site" roles="RnD">
+      <siteMapNode url="~\Pages\cancelPage" title="Cancel Material" description="Cancel Material" roles="RnD" />
+      <siteMapNode url="~\Pages\cancelApproval" title="Cancel Approval" description="Cancel Approval Material" roles="RnD" />
+      <siteMapNode url="~\Pages\changePassword" title="Change Password" description="Change Password SIte" roles="RnD" />
+      <siteMapNode url="~\Pages\masterUser" title="Master User" description="Master User Site" roles="RnD" />
+      <siteMapNode url="~\Pages\CommonTable" title="Common Table" description="Common Table" roles="RnD" />
+    </siteMapNode>
+    <siteMapNode url="~\Pages\dummyReport" title="Report" description="Report" roles="RnD">
+      <siteMapNode url="~\Pages\reportPage" title="Report Lead Time" description="Report Lead Time" roles="RnD" />
+      <siteMapNode url="~\Pages\reportCreateMaterial" title="Create Material Report" description="Report Create Material" roles="RnD" />
+      <siteMapNode url="~\Pages\reportCancelMaterial" title="Cancel Material Report" description="Report Cancel Material" roles="RnD" />
+      <siteMapNode url="~\Pages\reportSurchargeMaterial" title="Surcharge Material Report" description="Report Surcharge Material" roles="RnD" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

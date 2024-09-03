@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="testForm.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Indesso - Material Management</title>
+    <link href="../Images/HR.png" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="../Scripts/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../DatepickerJs/jquery-1.12.1-ui.js"></script>
+    <script type="text/javascript" src="../DatepickerJs/jquery-1.12.1-ui.min.js"></script>
+    <link href="../CSS/Theme/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/NavMenu.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/uicss.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/MainMaster.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/GridView.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="Script/NavMenu.js"></script>
+    <style type="text/css">
+        #mainHeader {
+            height: 48px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <!--Header-->
+        <div id="mainHeader" style="width:100%">
+            <div id="Header">
+                <table style="width:100%; margin: 0.8% 0px;">
+                    <tr>
+                        <td style=" width: 200px; vertical-align: middle; position: relative;">
+                            <asp:Image ID="headerImage" ImageUrl="~\Images\Indesso Logo4.gif" runat="server" CssClass="HeaderImage"/>
+                        </td>
+                        <td style="padding-top: 25px">
+                            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false"/>
+                            <asp:Menu orientation="Horizontal"
+                                ID="NavigationMenu" runat="server" DataSourceID="SiteMapDataSource1"
+                                OnMenuItemDataBound="NavigationMenu_OnMenuItemDataBound">
+                                <StaticSelectedStyle CssClass="selected"/>
+                                <LevelMenuItemStyles>
+                                    <asp:MenuItemStyle CssClass="main_menu" Width="150" />
+                                    <asp:MenuItemStyle CssClass="level_menu" Width="200" />
+                                </LevelMenuItemStyles>
+                            </asp:Menu>
+                        </td>
+                        <td style="text-align: right; padding-right: 1%; padding-top: 25px">
+                            <asp:Button runat="server" ID="btnLogOut" OnClick="btnLogOut_Click" Text="Log Out" CssClass="btn btn-info btn-sm" CausesValidation="false" UseSubmitBehavior="false" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br />  
+    <div id="main-content">
+        <div id="mainArea" class="mainArea">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+        <br />
+    <div class="loginFooter">
+        <asp:Label ID="lblFooter" runat="server" CssClass="copyright">&nbsp; &nbsp; Indesso &copy; 2018</asp:Label>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

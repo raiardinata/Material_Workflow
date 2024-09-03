@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~" title="root" description="Root">
+    <siteMapNode url="~\Pages\homePage" title="Home" description="Home" roles="RnD" />
+    <siteMapNode url="~\Pages\qaPage" title="QA" description="Quality Assurance Site" roles="RnD"/>
+    <siteMapNode url="~\Pages\dummyReport" title="Report" description="Report" roles="RnD">
+      <siteMapNode url="~\Pages\reportPage" title="Report Lead Time" description="Report Lead Time" roles="RnD" />
+      <siteMapNode url="~\Pages\reportCreateMaterial" title="Create Material Report" description="Report Create Material" roles="RnD" />
+      <siteMapNode url="~\Pages\reportCancelMaterial" title="Cancel Material Report" description="Report Cancel Material" roles="RnD" />
+    </siteMapNode>
+    <siteMapNode url="~\Pages\dummyMaintenanceDeptConst" title="Maintenance" description="Maintenance Page" roles="RnD">
+      <siteMapNode url="~\Pages\changePassword" title="Change Password" description="Change Password" roles="RnD" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

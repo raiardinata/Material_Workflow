@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~" title="root" description="Root">
+    <siteMapNode url="~\Pages\homePage" title="Home" description="Home" roles="Proc" />
+    <siteMapNode url="~\Pages\procPage" title="Proc" description="Procurement Site" roles="Proc"/>
+    <siteMapNode url="~\Pages\dummyMaintenanceDeptConst" title="Maintenance" description="Maintenance Page" roles="RnD">
+      <siteMapNode url="~\Pages\changePassword" title="Change Password" description="Change Password" roles="RnD" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
